@@ -1,5 +1,9 @@
 # E04a-Sprites Exercise
 
+Within the first 3 python main files, each of them have their required functions completed, including sprites that follow the mouse, sprites with changing emotes, and sprites that populate the page. Within the extra credit (main4), I made the sprite "paint" all over the canvas as you move the mouse around instead of doing a collage.
+
+
+
 This is an exercise to start experimenting with sprites in Python Arcade. This repository assumes that you have Python Arcade installed.
 
 The exercise takes place across three files:

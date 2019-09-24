@@ -17,13 +17,19 @@ class MyGame(arcade.Window):
         os.chdir(file_path)
         arcade.set_background_color(open_color.white)
 
-
+        self.animal_list = arcade.SpriteList()
     def setup(self):
-        pass        
+        self.animal_sprite = arcade.Sprite("assets/lenny.png", 0.5)
+        self.animal_sprite.center_x = 0
+        self.animal_sprite.center_y = 0
+        self.animal_list.append(self.animal_sprite)   
+        
+             
 
     def on_draw(self):
         arcade.start_render()
-        pass
+        self.animal_list.draw()
+        
 
 
     def update(self, delta_time):
@@ -31,7 +37,14 @@ class MyGame(arcade.Window):
 
 
     def on_mouse_motion(self, x, y, dx, dy):
-        pass
+        
+        self.animal_sprite = arcade.Sprite("assets/lenny.png", 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+
+
 
 def main():
     """ Main method """
